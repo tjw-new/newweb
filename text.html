@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS服务卡片布局 - Bootstrap 3</title>
+    <link rel="stylesheet" href="css/np.css">
+
+    <style>
+        .row-equal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-equal>[class*='col-'] {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card {
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .box1 {
+            background-color: #f8d7da;
+            margin-bottom: 4%;
+            height: 90%;
+        }
+
+        .box3 {
+            background-color: #d1e7dd;
+        }
+
+        .box4 {
+            background-color: #cfe2ff;
+        }
+
+        .btn-aws {
+            background-color: #FF9900;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .btn-aws:hover {
+            background-color: #e88b00;
+            color: white;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #232F3E;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+    <link rel="stylesheet" href="css/mode3.css">
+</head>
+
+<body>
+    <div class="container" style="margin-top: 30px;">
+        <div class="row row-equal">
+            <!-- 左侧大卡片 -->
+            <div class="col-md-5 col-sm-6">
+                <div class="service-card box1">
+                    <h3>Amazon Q 使用教程</h3>
+                    <p>手把手教你使用 Amazon Q，解放生产力，创新无压力</p>
+                    <a href="#" class="btn-aws">立即查看</a>
+                </div>
+            </div>
+
+            <!-- 右侧两个小卡片 -->
+            <div class="col-md-7 col-sm-6">
+                <div class="service-card box3">
+                    <h3>简化渲染管理</h3>
+                    <p>用 AWS Thinkbox 轻松构建云渲染农场，加速创作流程</p>
+                    <a href="#" class="btn-aws">立即了解</a>
+                </div>
+                <div class="service-card box4">
+                    <h3>生成式 AI 资源中心</h3>
+                    <p>探索 AWS 生成式 AI 服务与案例，开启您的生成式 AI 应用之旅</p>
+                    <a href="#" class="btn-aws">立即了解</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery和Bootstrap 3 JS -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center">© 2023 智创未来科技. All rights reserved.</p>
+        </div>
+    </footer>
+    <div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 style="margin: 50px 0 30px; color: #2c3e50;">网络安全服务费用表</h2>
+                    <p class="lead">选择最适合您业务需求的保护方案</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                        data-toggle="tab">基础防护</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">企业标准</a>
+                </li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                        data-toggle="tab">定制方案</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="container">
+                        <div class="row pricing-table">
+                            <!-- 基础套餐 -->
+                            <div class="col-md-12 pricing-tier">
+                                <div class="pricing-header">
+                                    <h3>基础防护</h3>
+                                    <p>适合初创企业</p>
+                                </div>
+                                <div class="panel-body text-center" style="padding: 30px;">
+                                    <div class="tier-price">¥8,800 <span>/年</span></div>
+                                    <ul class="tier-features">
+                                        <li>24/7基础安全监控</li>
+                                        <li>每月漏洞扫描报告</li>
+                                        <li>5个管理员账户</li>
+                                        <li>基础DDoS防护</li>
+                                        <li>每年1次渗透测试</li>
+                                        <li>工作日技术支持</li>
+                                    </ul>
+                                    <button class="btn btn-purchase">立即订购</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="container">
+                        <div class="row pricing-table">
+                            <div class="col-md-12 pricing-tier recommended">
+                                <div class="recommended-badge">推荐</div>
+                                <div class="pricing-header" style="background: #3498db;">
+                                    <h3>企业标准</h3>
+                                    <p>适合中型企业</p>
+                                </div>
+                                <div class="panel-body text-center" style="padding: 30px;">
+                                    <div class="tier-price">¥28,000 <span>/年</span></div>
+                                    <ul class="tier-features">
+                                        <li>智能威胁检测系统</li>
+                                        <li>每周漏洞扫描+修复指导</li>
+                                        <li>无限管理员账户</li>
+                                        <li>高级DDoS防护</li>
+                                        <li>每季度渗透测试</li>
+                                        <li>24/7中文技术支持</li>
+                                        <li>数据泄露保险(最高50万)</li>
+                                    </ul>
+                                    <button class="btn btn-purchase">立即订购</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <div class="container">
+                        <div class="col-md-12 pricing-tier">
+                            <div class="pricing-header">
+                                <h3>定制方案</h3>
+                                <p>适合大型企业</p>
+                            </div>
+                            <div class="panel-body text-center" style="padding: 30px;">
+                                <div class="tier-price">定制报价</div>
+                                <ul class="tier-features">
+                                    <li>专属安全团队</li>
+                                    <li>实时威胁情报推送</li>
+                                    <li>定制安全策略</li>
+                                    <li>金融级DDoS防护</li>
+                                    <li>每月红蓝对抗演练</li>
+                                    <li>专属客户经理</li>
+                                    <li>数据泄露保险(最高500万)</li>
+                                    <li>合规认证支持</li>
+                                </ul>
+                                <button class="btn btn-purchase">联系销售</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid np">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    <strong>精选云产品「组合GO」，限时超值价</strong>
+                </h2>
+            </div>
+            <div class="col-md-12">
+                <p>覆盖90%+通用业务场景，组合购买「专享活动价」！
+                    <a class="npa">活动规则</a>
+                </p>
+            </div>
+            <div class="col-md-12 tempnp">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="panel-group np1" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading np11" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne" class="np11a">
+                        云储存超值套餐
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row row-equalnp">
+                        <div class="col-md-3 np111">
+                            <h3 class="nph3"><strong>数据备份与保护</strong></h3>
+                            <p class="text-justify"><small>利用系统盘快照生成自定义镜像，
+                                    快速复制出与源实例一致环境的新 ECS 实例，
+                                    在应对操作失误或系统</small></p>
+                        </div>
+                        <div class="col-md-9 np112">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="col-md-12">
+                                        <h4>适用人群</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-4">
+                                            <p>
+                                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                个人开发者
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>
+                                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                企业用户
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h4>组合优势</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="text-justify">
+                                            1、ECS+对象存储 OSS 套餐优势：采用快照备份技术，对生产环境 ECS
+                                            实例的云盘进行定期备份创建快照，以实现核心业务数据保护。通过跨地域复制快照，
+                                            达到同城和异地容灾的目标，增强系统高可用性和灾难恢复能力；2、对象存储 OSS+CDN 组合套餐优势：
+                                            使用 CDN 产品来分发 OSS 上的网站静态文件，不仅可以降低源站的负载压力，
+                                            还能够提升网站的访问性能，同时还能在高并发场景下为您节约成本。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 np112fa">
+                                    <a class="np112a">#了解更多云服务器产</a><br>
+                                    <a class="np112a">#了解更多 CDN 产品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading np12" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed np12a" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        AI加速
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <div class="row row-equalnp">
+                        <div class="col-md-3 np111">
+                            <h3 class="nph3"><strong>AI 加速计算与存储</strong></h3>
+                            <p class="text-justify"><small>GPU云服务器适用于AI训练、深度学习和大数据分析，
+                                具备强大并行处理能力；
+                                NAS提供高可靠高性能文件存储，保障高效数据存取与管</small></p>
+                        </div>
+                        <div class="col-md-9 np112">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="col-md-12">
+                                        <h4>适用人群</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-4">
+                                            <p>
+                                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                模型训练与推理
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>
+                                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                高性能计算
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h4>组合优势</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="text-justify">
+                                            通过组合购买GPU云服务器和文件存储NAS，
+                                            不仅能获得强大的计算能力和高效的数据管理，
+                                            还能享受优惠价格和灵活配置，实现性能与成本效益的完美平衡。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 np112fa">
+                                    <a class="np112a">#了解更多云服务器产</a><br>
+                                    <a class="np112a">#了解更多 CDN 产品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading np13" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed np13a" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        消息队列
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <div class="row row-equalnp">
+                        <div class="col-md-3 np111">
+                            <h3 class="nph3"><strong>OSS事件通知</strong></h3>
+                            <p class="text-justify"><small>通过创建事件通知规则，轻量消息队列（原 MNS）可以将对象存储 OSS 
+                                指定资源上产生的事件以消息的方式主动推送到指定的接</small></p>
+                        </div>
+                        <div class="col-md-9 np112">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="col-md-12">
+                                        <h4>适用场景</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-3">
+                                            <p>
+                                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                权限操作通知
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p>
+                                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                数据分析与趋势
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p>
+                                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                                资源QPS监控
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h4>组合优势</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="text-justify">
+                                           OSS+轻量消息队列套餐：对象存储 OSS 是海量、安全、低成本、高可靠的云存储服务，
+                                           轻量消息队列（原 MNS）是一款易集成、高并发、
+                                           可弹性扩展的轻量消息队列服务，可以轻松实现订阅 OSS 事件，
+                                           高效地对文件变动进行实时处理。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 np112fa">
+                                    <a class="np112a">#了解更多云服务器产</a><br>
+                                    <a class="np112a">#了解更多 CDN 产品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid moreinfo">
+        <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center"><strong>了解更多</strong></h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

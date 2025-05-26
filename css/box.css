@@ -1,0 +1,78 @@
+.row-equal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row-equal > [class*='col-'] {
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card {
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(36, 172, 242.12), 0 3px 6px rgba(82, 58, 119.08);
+        }
+        .box1 {
+            background-color: #f8d7da;
+            margin-bottom: 4%;
+            height: 90%;
+        }
+        .box3 {
+            background-color: #d1e7dd;
+        }
+        .box4 {
+            background-color: #cfe2ff;
+        }
+        .btn1 {
+            background-color: #FF9900;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 15px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn1:hover {
+            background-color: #e88b00;
+            color: white;    
+            box-shadow: 0 6px 12px rgba(205, 151, 249.12), 0 3px 6px rgba(82, 58, 119.08); 
+            text-decoration: none;       
+        }
+        .box1 h3,.box4 h3,.box3 h3 {
+            margin-top: 0;
+            color: #232F3E;
+        }
+        .box1 p,.box4 p,.box3 p {
+            color: #555;
+        }
+
+
+        .show1,.show2,.show3{
+            padding-top: 5%;
+            padding-left: 10%;
+            padding-bottom: 15%;
+            padding-right: 10%;
+        }
+
+        .show1{
+            padding-top: 7%;
+            padding-left: 10%;
+            padding-bottom: 13%;
+            padding-right: 10%;
+        }
+        .show3{
+            padding-top: 7%;
+            padding-left: 10%;
+            padding-bottom: 13%;
+            padding-right: 10%;
+        }
+        .s1{
+            padding-top: 4%;
+        }

@@ -1,0 +1,99 @@
+
+        .pricing-table {
+            margin: 40px auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .pricing-header {
+            background: #6c7885;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+        .pricing-tier {
+            border-right: 1px solid #eee;
+            transition: all 0.3s;
+        }
+        .pricing-tier:last-child {
+            border-right: none;
+        }
+        .pricing-tier:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .tier-name {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .tier-price {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 20px 0;
+            color: #e74c3c;
+        }
+        .tier-price span {
+            font-size: 16px;
+            font-weight: normal;
+            color: #7f8c8d;
+        }
+        .tier-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .tier-features li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ecf0f1;
+        }
+        .tier-features li:last-child {
+            border-bottom: none;
+        }
+        .recommended {
+            position: relative;
+            border-top: 9px solid #e74c3c;
+        }
+        .recommended-badge {
+            position: absolute;
+            top: -7px;
+            right: 20px;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .btn-purchase {
+            background: #4799d0;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        .btn-purchase:hover {
+            background: #2980b9;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .currency-switch {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .note {
+            font-size: 12px;
+            color: #95a5a6;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .pricing-tier {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                margin-bottom: 30px;
+            }
+        }

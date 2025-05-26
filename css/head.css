@@ -1,0 +1,21 @@
+
+.head {
+    background-color: #f5f5f5;
+}
+@media (max-width: 760px) {
+  .navbar-form {
+    width: 60%;
+  }
+}
+.navbar-form .form-control {
+  background-image: url('../img/搜索框背景.png');
+  background-repeat: no-repeat;
+  border: 1px solid #02e5f9;
+}
+.input-group-btn .btn {
+  background-color: #02e5f9;
+  border: 1px solid #02e5f9;
+}
+.container-fluid{
+    margin: 0;
+}
