@@ -1,0 +1,32 @@
+.ss1{
+    border-radius: 8px;
+}
+
+.ssbox1{
+  border:solid;
+  border-radius: 5px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-color: #dddddd;
+  margin-bottom: 28px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-out;
+}
+
+.sshead{
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.ssbox11:hover{
+  transform: translateX(20px); /* 向右移动 */
+            box-shadow: -10px 0 10px rgba(184, 174, 171, 0.3); /* 左侧阴影 */
+}
+.ssbox12:hover{
+  transform: translateX(-20px); /* 向右移动 */
+            box-shadow: 10px 0 10px rgba(8, 39, 63, 0.3); /* 左侧阴影 */
+}
+.ssbox13:hover{
+  transform: translateX(20px); /* 向右移动 */
+            box-shadow: -10px 0 10px rgba(67, 124, 147, 0.3); /* 左侧阴影 */
+}
